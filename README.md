@@ -1,5 +1,11 @@
 # Redux Data Structures
 
+> ## Disclaimer
+
+> This fork was created to simplify the build process and publish a simpler ES5 transpilation of the JS in this library to play nice with UglifyJS (see: https://github.com/adrienjt/redux-data-structures/issues/4). Use at your own risk, but you can install it with `yarn add @jakxz/redux-data-structures`.
+
+> All original credits go to @adrienjt for the great work in this library.
+
 ## Introduction
 
 Redux Data Structures is a library of _reducer makers_.
@@ -9,10 +15,6 @@ Reducer makers help create common reducers like counters, maps, lists (queues, s
 Redux Data Structures was developed for Redux, but does not depend on it. It can actually be used with any reactive state container, even a custom one; Redux Data Structures doesn't have any dependency.
 
 ## Getting Started
-
-```
-npm install --save redux-data-structures
-```
 
 Here's an example from the [Redux README](https://github.com/reactjs/redux), rewritten with Redux Data Structures:
 
