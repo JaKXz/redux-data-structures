@@ -1,15 +1,15 @@
 {
-  "name": "redux-data-structures",
-  "version": "0.1.5",
+  "name": "@jakxz/redux-data-structures",
+  "version": "0.2.0",
   "description": "Creator functions for common reducers",
-  "main": "lib/index.js",
-  "module": "es6/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "rm -rf coverage && jest --verbose --coverage src",
-    "build:es6": "rm -rf es6 && BABEL_ENV=es6 babel src --out-dir es6 --ignore __tests__",
-    "build:commonjs": "rm -rf lib && BABEL_ENV=commonjs babel src --out-dir lib --ignore __tests__",
-    "build": "npm run build:es6 && npm run build:commonjs"
+    "build": "babel src --ignore __tests__ --out-dir dist"
   },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/adrienjt/redux-data-structures.git"

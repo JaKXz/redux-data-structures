@@ -8,5 +8,4 @@ node_modules
 coverage
 
 # Babel
-lib
-es6
+dist
